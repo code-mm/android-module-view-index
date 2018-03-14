@@ -3,7 +3,7 @@ package com.example.maohuawei.addressbookindex;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.addressbookviewlibrary.Person;
+import com.example.maohuawei.addressbookindex.bean.Person;
 import com.example.maohuawei.addressbookindex.view.AddressBookView;
 
 import java.util.ArrayList;

@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.MultiTransformation;
-import com.example.addressbookviewlibrary.Person;
 import com.example.maohuawei.addressbookindex.R;
+import com.example.maohuawei.addressbookindex.bean.Person;
 
 import java.util.List;
 

@@ -14,8 +14,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.MultiTransformation;
-import com.example.addressbookviewlibrary.Person;
 import com.example.maohuawei.addressbookindex.R;
+import com.example.maohuawei.addressbookindex.bean.Person;
 import com.example.maohuawei.addressbookindex.util.ToastUtil;
 
 import java.util.List;
@@ -48,7 +48,7 @@ public class AddressBookView extends LinearLayout {
 
     public AddressBookView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        view = LayoutInflater.from(context).inflate(R.layout.view_address_book, this);
+        view = LayoutInflater.from(context).inflate(R.layout.view_addressbook, this);
         init();
     }
 
@@ -74,6 +74,8 @@ public class AddressBookView extends LinearLayout {
             public void onIndexLetterChange(String letter) {
 
                 ToastUtil.showToast(letter);
+
+                updateRecyclerView(letter);
 
             }
         });

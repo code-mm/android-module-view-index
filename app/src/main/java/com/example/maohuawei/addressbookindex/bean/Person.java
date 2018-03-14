@@ -1,4 +1,5 @@
 
+package com.example.maohuawei.addressbookindex.bean;
 
 import com.example.maohuawei.addressbookindex.util.PinyinUtil;
 
