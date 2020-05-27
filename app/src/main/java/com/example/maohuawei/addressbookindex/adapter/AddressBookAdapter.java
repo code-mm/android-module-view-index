@@ -1,7 +1,7 @@
 package com.example.maohuawei.addressbookindex.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +15,7 @@ import com.example.maohuawei.addressbookindex.bean.Person;
 
 import java.util.List;
 
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 
 import static com.bumptech.glide.request.RequestOptions.bitmapTransform;
 
@@ -93,12 +93,7 @@ public class AddressBookAdapter extends RecyclerView.Adapter<AddressBookAdapter.
         }
 
 
-        MultiTransformation multi = new MultiTransformation(
 
-                new RoundedCornersTransformation(128, 0, RoundedCornersTransformation.CornerType.ALL));
-        Glide.with(context).load(person.getImage())
-                .apply(bitmapTransform(multi))
-                .into(holder.imageViewAvatar);
 
         holder.textViewName.setText(person.getName());
 

@@ -1,9 +1,9 @@
 package com.example.maohuawei.addressbookindex;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maohuawei.addressbookindex.adapter.AddressBookAdapter;
 import com.example.maohuawei.addressbookindex.bean.Person;

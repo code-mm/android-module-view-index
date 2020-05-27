@@ -1,9 +1,9 @@
 package com.example.maohuawei.addressbookindex.view;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,17 +12,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.MultiTransformation;
+
 import com.example.maohuawei.addressbookindex.R;
 import com.example.maohuawei.addressbookindex.bean.Person;
 import com.example.maohuawei.addressbookindex.util.ToastUtil;
 
 import java.util.List;
 
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-import static com.bumptech.glide.request.RequestOptions.bitmapTransform;
 
 public class AddressBookView extends LinearLayout {
 
@@ -171,12 +168,8 @@ public class AddressBookView extends LinearLayout {
             }
 
 
-            MultiTransformation multi = new MultiTransformation(
 
-                    new RoundedCornersTransformation(128, 0, RoundedCornersTransformation.CornerType.ALL));
-            Glide.with(getContext()).load(person.getImage())
-                    .apply(bitmapTransform(multi))
-                    .into(holder.imageViewAvatar);
+
 
             holder.textViewName.setText(person.getName());
 
