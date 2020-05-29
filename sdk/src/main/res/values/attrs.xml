@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndexView">
+
+
+        <attr name="indexTextColor" format="color" />
+        <attr name="indexTextSize" format="dimension" />
+
+    </declare-styleable>
+
+</resources>

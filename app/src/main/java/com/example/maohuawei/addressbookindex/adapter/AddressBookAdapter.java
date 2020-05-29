@@ -1,23 +1,20 @@
 package com.example.maohuawei.addressbookindex.adapter;
 
 import android.content.Context;
+
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.MultiTransformation;
 import com.example.maohuawei.addressbookindex.R;
 import com.example.maohuawei.addressbookindex.bean.Person;
 
 import java.util.List;
 
-
-
-import static com.bumptech.glide.request.RequestOptions.bitmapTransform;
 
 /**
  * Created by maohuawei on 2018/2/5.
@@ -91,8 +88,6 @@ public class AddressBookAdapter extends RecyclerView.Adapter<AddressBookAdapter.
                 }
             }
         }
-
-
 
 
         holder.textViewName.setText(person.getName());

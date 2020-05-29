@@ -17,6 +17,8 @@ import com.example.maohuawei.addressbookindex.R;
 import com.example.maohuawei.addressbookindex.bean.Person;
 import com.example.maohuawei.addressbookindex.util.ToastUtil;
 
+import org.ms.view.sidebar.IndexView;
+
 import java.util.List;
 
 

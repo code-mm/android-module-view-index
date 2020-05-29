@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.maohuawei.addressbookindex.adapter.AddressBookAdapter;
 import com.example.maohuawei.addressbookindex.bean.Person;
 import com.example.maohuawei.addressbookindex.util.ToastUtil;
-import com.example.maohuawei.addressbookindex.view.IndexView;
+
+import org.ms.view.sidebar.IndexView;
 
 import java.util.ArrayList;
 import java.util.Collections;
