@@ -1,2 +1,2 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.ms.view.sidebar" />
+    package="com.ms.module.view.index" />

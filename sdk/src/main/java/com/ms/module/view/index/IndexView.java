@@ -1,4 +1,4 @@
-package org.ms.view.sidebar;
+package com.ms.module.view.index;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-
 
 
 public class IndexView extends View {
@@ -115,12 +114,12 @@ public class IndexView extends View {
         itemWidth = this.getMeasuredWidth();
 
 
-        Log.e(TAG, "onMeasure:itemWidth  "+itemWidth );
+        Log.e(TAG, "onMeasure:itemWidth  " + itemWidth);
 
         //每一个字母的高度
         itemHeight = this.getMeasuredHeight() / letters.length;
 
-        Log.e(TAG, "onMeasure:itemHeight =  "+itemHeight  );
+        Log.e(TAG, "onMeasure:itemHeight =  " + itemHeight);
     }
 
 
@@ -147,7 +146,6 @@ public class IndexView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-
 
         switch (event.getAction()) {
 
@@ -179,16 +177,11 @@ public class IndexView extends View {
         return true;
     }
 
-
     public interface IndexViewLetterChangeListener {
-
         void onIndexLetterChange(String letter);
-
-
     }
 
     private IndexViewLetterChangeListener indexViewLetterChangeListener;
-
 
     /**
      * @param indexViewLetterChangeListener

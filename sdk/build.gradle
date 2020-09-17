@@ -35,4 +35,4 @@ dependencies {
 }
 
 
-apply from: "./aliyunmaven.gradle"
+apply from: "./maven_publish.gradle"
